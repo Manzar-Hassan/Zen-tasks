@@ -1,0 +1,51 @@
+{
+  "Name": "Manzar Hassan",
+  "Mobile": [8890283937, 7892093728],
+  "Email": "manzarhassan@gmail.com",
+  "Address": [
+    {
+      "House": 18,
+      "Landmark": "tata hospital",
+      "pin": 828387,
+      "city": "Bokaro",
+      "state": "Jharkhand"
+    },
+    {
+      "House": 15,
+      "Landmark": "steel plant",
+      "pin": 828387,
+      "city": "jamshedpur",
+      "state": "Jharkhand"
+    }
+  ],
+  "summary": "Seeking a beginner role to enhance and explore my technical knowledge",
+  "Experience": [
+    {
+      "mode": "virtual internship",
+      "company": "Delloite",
+      "duration": "15 days"
+    },
+    {
+      "mode": "virtual internship",
+      "company": "JP morgan",
+      "duration": "15 days"
+    }
+  ],
+  "skills": ["JavaScript", "HTML", "CSS"],
+  "Education": [
+    {
+      "HSC": {
+        "School": "TATA DAV SCHOOL",
+        "percentage": 77.6,
+        "state": "Jharkhand"
+      },
+      "Btech": {
+        "College": "Aditya college of engineering and technology",
+        "percentage": 72.26,
+        "University": "JNTUK university",
+        "State": "Andhra pradesh"
+      }
+    }
+  ],
+  "Hobbies": ["chess", "online games", "solving puzzles"]
+}
