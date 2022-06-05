@@ -398,11 +398,8 @@ let validKeys = {
 document.body.addEventListener('keypress', function(event) {
   if(validKeys.hasOwnProperty(event.key)) {
     validKeys[event.key]();
-    console.log(event.key)
-    console.log(event.code)
 
   } else {
     alert('Only Numbers are Allowed')
-    console.log(event.key)
   }
 });
