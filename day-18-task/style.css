@@ -1,0 +1,22 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  padding-top: 3rem;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+#card {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
+}
+
+#country-name {
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 5px;
+}
