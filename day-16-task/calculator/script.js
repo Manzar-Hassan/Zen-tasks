@@ -395,7 +395,7 @@ let validKeys = {
   'Enter':outputHandler,
 }
 
-document.body.addEventListener('keypress', function(event) {
+document.body.addEventListener('keyup', function(event) {
   if(validKeys.hasOwnProperty(event.key)) {
     validKeys[event.key]();
 
