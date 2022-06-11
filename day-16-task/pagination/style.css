@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#title {
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#table {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
