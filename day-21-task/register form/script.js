@@ -1,5 +1,7 @@
+//creating container div
 const container = document.createElement("div");
 
+//creating register form
 container.innerHTML = `
 <div class="row">
   <div class="col-md-6 offset-md-3">
@@ -87,12 +89,16 @@ container.innerHTML = `
   </div>
 </div>
 `;
+
+//appending the container element with body
 document.body.append(container);
 
+//defining submit form event
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("myForm").addEventListener("submit", handleForm);
 });
 
+//callback submit function
 function handleForm(event) {
   event.preventDefault();
 
@@ -108,12 +114,14 @@ function handleForm(event) {
     },
   };
 
+  //checking if phone number is valid or not
   if (userData.profile.phone.length !== 13) {
     alert("Please enter valid phone number");
     form.Phone.value = "";
     return;
   }
 
+  //checking if password and confirm password matches or not
   if (form.password.value !== form.confirmpassword.value) {
     alert("password doeen't match");
     form.password.value = "";
@@ -121,6 +129,7 @@ function handleForm(event) {
     return;
   }
 
+  //checking if password is 8 characters long or not
   if (form.password.value.length < 8) {
     alert("Password is less than 8 characters");
     form.password.value = "";
@@ -128,6 +137,7 @@ function handleForm(event) {
     return;
   }
 
+  //finally creating user account using api
   fetch("https://api.m3o.com/v1/user/Create", {
     method: "POST",
     headers: {
@@ -150,6 +160,7 @@ function handleForm(event) {
         `
       }
 
+    //redirecting user on successful account creation
       setTimeout(() => {
         window.location.href = "https://login-05.netlify.app/";
       },3000)
